@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorForgotPassText">#ff0079ff</color>
+    <color name="colorBTNregisterback">#0747AC</color>
+    <color name="alphaBlue">#D7B6D0F8</color>
+    <color name="colorNotificationDot">#ff00db38</color>
+
+    <color name="colorBack">#A4383535</color>
+
+</resources>

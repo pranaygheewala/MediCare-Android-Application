@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashBoardActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBTNregisterback"
+        android:minHeight="?actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:text="Dashboard"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/add_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/ic_add_medicine"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Add Medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_inventory"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Review Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

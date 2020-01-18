@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBTNregisterback"
+        android:minHeight="?actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_back_shadowed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:text="Add Medicine"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_medicine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_medicine_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/_13ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_medicine_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_medicine_des"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Medicine Description"
+                        android:inputType="text"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/_13ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_medicine_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_medicine_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/_13ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_medicine_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_medicine_qty"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/_13ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <Button
+            android:id="@+id/btn_show_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/register_btn_back"
+            android:text="Add Medicine"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20sdp" />
+    </LinearLayout>
+
+</LinearLayout>

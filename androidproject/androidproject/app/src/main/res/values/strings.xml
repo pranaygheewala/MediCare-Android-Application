@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Medicare</string>
+    <string name="title_activity_near_madical">Map</string>
+    <string name="save_continue"><![CDATA[Select & Continue]]></string>
+    <string name="payment_order1"><![CDATA[Payment & Order]]></string>
+    <string name="payment_order2"><![CDATA[Order]]></string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

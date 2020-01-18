@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_medicine"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="@drawable/textback"
+            android:textColor="@android:color/white"
+            android:text="Search Medicine"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_75sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/near_store"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="@drawable/textback"
+            android:textColor="@android:color/white"
+            android:text="Nearest Store"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_75sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/upload_prescription"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="@drawable/textback"
+            android:textColor="@android:color/white"
+            android:text="Upload Prescription"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_75sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/set_reminder"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="@drawable/textback"
+            android:textColor="@android:color/white"
+            android:text="Set Reminder"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_75sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

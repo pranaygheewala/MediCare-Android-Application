@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrdarDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBTNregisterback"
+        android:minHeight="?actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_back_shadowed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:text="Order Detail"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_Create_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_300sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Cash on Delivery"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/medicine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/medicine_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
